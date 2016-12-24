@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_committee_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorTabsBackground"
+    android:orientation="vertical"
+    tools:context="com.webtech.homework.congress.activities.CommitteeDetailsActivity">
+
+    <!-- The ActionBar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detailsCommitteesHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/committees_favorites_button"
+                    android:layout_width="@dimen/legislator_details_buttons"
+                    android:layout_height="@dimen/legislator_details_buttons"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_details_favorites_unchecked" />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/detailsCommitteesHeader"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Committee ID:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsCommitteeID"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="right"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Name:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsCommitteeName"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="right"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Chamber:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/detailsCommitteeChamberLogo"
+                        android:layout_gravity="right"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginRight="10dp"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/ic_independent"/>
+
+                    <TextView
+                        android:id="@+id/detailsCommitteeChamber"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Parent Committee:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsParentCommittee"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="right"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Contact:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsCommitteeContact"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="right"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin"
+                    android:layout_weight="1">
+
+                    <TextView
+                        android:layout_gravity="left"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="left"
+                        android:text="Office:"
+                        android:textColor="#000000"
+                        android:textSize="@dimen/details_table_header"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/detailsCommitteeOffice"
+                        android:layout_gravity="right"
+                        android:layout_marginRight="10dp"
+                        android:layout_weight="1"
+                        android:width="0dp"
+                        android:gravity="right"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:textSize="@dimen/details_table_header" />
+                </TableRow>
+            </TableLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

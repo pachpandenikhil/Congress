@@ -1,0 +1,17 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRowBackground"
+    tools:context="com.webtech.homework.congress.fragments.JointCommittees">
+
+    <ListView
+        android:id="@+id/jointCommitteesList"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:drawSelectorOnTop="true"
+        tools:listitem="@layout/committee_row" >
+
+    </ListView>
+
+</RelativeLayout>

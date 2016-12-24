@@ -1,0 +1,33 @@
+<android.support.percent.PercentRelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorRowBackground"
+    tools:context="com.webtech.homework.congress.fragments.StateLegislators">
+
+    <ListView
+        android:id="@+id/legislatorsByStateList"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="85%"
+        android:drawSelectorOnTop="true"
+        tools:listitem="@layout/legislator_row">
+
+    </ListView>
+
+
+    <LinearLayout
+        android:id="@+id/stateLegislatorsIndex"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_toRightOf="@+id/legislatorsByStateList"
+        android:background="@color/colorIndexBackground"
+        android:orientation="vertical"
+        app:layout_heightPercent="100%"
+        app:layout_widthPercent="15%">
+
+    </LinearLayout>
+
+</android.support.percent.PercentRelativeLayout>

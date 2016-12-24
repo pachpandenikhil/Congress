@@ -1,0 +1,317 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_bill_details"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorTabsBackground"
+    tools:context="com.webtech.homework.congress.activities.BillDetailsActivity">
+
+    <!-- The ActionBar displayed at the top -->
+    <include
+        layout="@layout/toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:id="@+id/detailsBillHeader"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:gravity="right"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bill_favorites_button"
+                    android:layout_width="@dimen/legislator_details_buttons"
+                    android:layout_height="@dimen/legislator_details_buttons"
+                    android:layout_marginRight="10dp"
+                    android:background="@drawable/ic_details_favorites_unchecked"  />
+
+            </LinearLayout>
+
+            <TableLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical">
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Bill ID:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillID"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Title:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillTitle"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Bill Type:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillType"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Sponsor:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillSponsor"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Chamber:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillChamber"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Status:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillStatus"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Introduced On:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillIntroducedOn"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Congress URL:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillCongressURL"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Version Status:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillVersionStatus"
+                        android:text="Column 2"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        android:textSize="@dimen/details_table_header"/>
+                </TableRow>
+
+                <TableRow
+                    android:layout_width="match_parent"
+                    android:layout_marginBottom="@dimen/details_table_row_bottom_margin">
+                    <TextView
+                        android:width="0dp"
+                        android:text="Bill URL:"
+                        android:textColor="#000000"
+                        android:layout_marginLeft="10dp"
+                        android:gravity="left"
+                        android:layout_gravity="left"
+                        android:layout_weight="1"
+                        android:textStyle="bold"
+                        android:textSize="@dimen/details_table_header"/>
+
+                    <TextView
+                        android:width="0dp"
+                        android:id="@+id/detailsBillURL"
+                        android:text="https://www.gpo.gov/fdsys/pkg/abc/def/pqr/xyz"
+                        android:textColor="@color/colorText"
+                        android:layout_marginRight="10dp"
+                        android:gravity="right"
+                        android:layout_gravity="right"
+                        android:layout_weight="1"
+                        />
+                </TableRow>
+
+            </TableLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

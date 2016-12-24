@@ -1,0 +1,31 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group>
+        <item
+            android:id="@+id/legislators_fragment"
+            android:icon="@drawable/ic_legislators"
+            android:title="Legislators" />
+        <item
+            android:id="@+id/bills_fragment"
+            android:icon="@drawable/ic_bills"
+            android:title="Bills" />
+        <item
+            android:id="@+id/committees_fragment"
+            android:icon="@drawable/ic_committees"
+            android:title="Committees" />
+        <item
+            android:id="@+id/favorites_fragment"
+            android:icon="@drawable/ic_favorites"
+            android:title="Favorites" />
+
+        <item android:title="Other">
+            <menu>
+                <group>
+                    <item
+                        android:id="@+id/about_me_activity"
+                        android:title="About Me" />
+                </group>
+            </menu>
+        </item>
+    </group>
+</menu>
