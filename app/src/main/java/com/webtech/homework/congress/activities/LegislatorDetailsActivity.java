@@ -226,6 +226,7 @@ public class LegislatorDetailsActivity extends AppCompatActivity {
             double percentage = (numerator/denominator)*100;
             long roundedProgress = Math.round(percentage);
             int progress = (int)roundedProgress;
+            progress = Math.min(100, progress);
             ProgressBar term = (ProgressBar) findViewById(R.id.detailsLegislatorTerm);
             term.setProgress(progress);
 
